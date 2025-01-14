@@ -15,35 +15,6 @@ The topology includes:
 2 Routers (R1 and R2) connected to ISPs.
 A LAN switch connecting PCs and a DHCP server.
 HSRP Virtual IP Address: 192.168.100.254 for gateway redundancy.
-2. DHCP Server Configuration
-arduino
-Copy code
-ip dhcp pool LAN1  
-   network 192.168.100.0 255.255.255.0  
-   default-router 192.168.100.254  
-   dns-server 192.168.100.100  
-ip dhcp excluded-address 192.168.100.1 192.168.100.9  
-
-
-Here’s a polished and professional version of the GitHub README.md for your project:
-
-🏥 Hospital Network Project
-A robust and scalable network designed for hospital infrastructure, featuring high availability, gateway redundancy, and automatic failover. This project leverages advanced networking protocols and automation to ensure uninterrupted connectivity for critical healthcare operations.
-
-📋 Project Overview
-🌟 Features:
-HSRP Protocol (Hot Standby Router Protocol): Ensures seamless gateway redundancy and failover.
-Dual ISP Setup: Provides internet redundancy via two ISPs.
-Dynamic IP Allocation: Configured DHCP server for automatic IP address assignment.
-DNS Server: Resolves domain names like google.com and facebook.com into IP addresses.
-Default Routing: Simplifies routing to external networks.
-LAN Infrastructure: Supports multiple devices with reliable connectivity.
-🖥 Network Topology:
-The topology includes:
-
-2 Routers (R1 and R2) connected to ISPs.
-A LAN switch connecting PCs and a DHCP server.
-HSRP Virtual IP Address: 192.168.100.254 for gateway redundancy.
 🔧 Technical Specifications
 1. HSRP Configuration
 Router 1 (R1):
